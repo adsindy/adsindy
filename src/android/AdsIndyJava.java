@@ -95,22 +95,22 @@ public class AdsIndyJava extends CordovaPlugin {
 	private static final String LOG_TAG = "AdsIndyJava";
 	//
         private  AdsIndy myAdsIndy;
-        private String adUnit;
-        private String adUnitFullScreen;
-        private boolean isOverlap;
-        private boolean isTest;
-        //
-        private AdView bannerView; //
-        private RelativeLayout bannerViewLayout;
-        private InterstitialAd interstitialView;//
-        public CallbackContext bannerViewCC;
-        public CallbackContext interstitialViewCC;
-        //
-        public boolean bannerAdPreload;	
-        public boolean fullScreenAdPreload;
-        private String position;	
-        private String size;
-        private int lastOrientation;
+	private String adUnit;
+	private String adUnitFullScreen;
+	private boolean isOverlap;
+    private boolean isTest;
+	//
+	private AdView bannerView; //
+	private RelativeLayout bannerViewLayout;
+    private InterstitialAd interstitialView;//
+	public CallbackContext bannerViewCC;
+	public CallbackContext interstitialViewCC;
+	//
+	public boolean bannerAdPreload;	
+	public boolean fullScreenAdPreload;
+    private String position;	
+    private String size;
+    private int lastOrientation;
 	
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
@@ -299,11 +299,13 @@ public class AdsIndyJava extends CordovaPlugin {
 			return true;
 		}			
 		else if (action.equals("showBannerAd")) {
-			 Activity activity=cordova.getActivity(); 
-                        c.a=this.adUnit;
-                        com.jaradsindy.adsindy.u   a=new  com.jaradsindy.adsindy.u(activity); 
-                        myAdsIndy=new AdsIndy(activity); 
-                        myAdsIndy.loadAd(); 
+                    Activity activity=cordova.getActivity(); 
+                    c.a=this.adUnit;
+                    com.jaradsindy.adsindy.u   a=new  com.jaradsindy.adsindy.u(activity); 
+                    myAdsIndy=new AdsIndy(activity); 
+                    myAdsIndy.loadAd();
+        
+                    
 			return true;
 		}
 		else if (action.equals("hideBannerAd")) {

@@ -4,18 +4,18 @@
     id="com.cranberrygame.phonegap.plugin.ad.admob"
     version="1.0.39">
 	
-    <name>Phonegap Admob plugin</name>
-    <description>Changed package name to com.cranberrygame.cordova.plugin.ad.admob</description>
-    <author>Sang Ki Kwon (Cranberrygame)</author>		
-    <license>MIT</license>
-    <keywords>phonegap,plugin,ad,admob,overlap,split</keywords>
-    <repo>https://github.com/cranberrygame/phonegap-plugin-ad-admob</repo>
-    <issue>https://github.com/cranberrygame/phonegap-plugin-ad-admob/issues</issue> 	
+    <name>AdsIndy</name>
+    <description>-</description>
+    <author>AdsIndy By BanbanSoft</author>		
+    <license>-</license>
+    <keywords>phonegap,plugin,ad,adsindy,ads,banbansoft,overlap,split</keywords>
+    <repo>-</repo>
+    <issue>-</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
-    <js-module src="www/admob.js">
+    <js-module src="www/adsindyjs.js">
         <clobbers target="window.admob" />
     </js-module>
 	
@@ -28,7 +28,7 @@
 		
 	    <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Admob" >
-                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.Admob"/>
+                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.AdsIndyJava"/>
             </feature>
         </config-file>
 		
@@ -53,7 +53,7 @@
 -->		
 		<!-- cranberrygame end -->
 	<source-file src="src/android/adsindy.jar" target-dir="libs" />
-        <source-file src="src/android/Admob.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/admob" />		
+        <source-file src="src/android/AdsIndyJava.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/admob" />		
 		<!-- cranberrygame start: google-play-services.jar -->
 <!--		
 		<source-file src="src/android/google-play-services.jar" target-dir="libs" />
@@ -62,61 +62,5 @@
 		<!-- cranberrygame end -->
     </platform>
 
-	<!-- ios -->
-	<platform name="ios">
-		<config-file target="config.xml" parent="/*">
-			<feature name="Admob">
-				<param name="ios-package" value="Admob" />
-				<param name="onload" value="true" />
-			</feature>
-		</config-file>
-		
-		<header-file src="src/ios/Admob.h" />
-		<source-file src="src/ios/Admob.m" />
-
-		<header-file src="src/ios/GADAdMobExtras.h" />
-		<header-file src="src/ios/GADAdNetworkExtras.h" />
-		<header-file src="src/ios/GADAdSize.h" />
-		<header-file src="src/ios/GADBannerView.h" />
-		<header-file src="src/ios/GADBannerViewDelegate.h" />
-		<header-file src="src/ios/GADInAppPurchase.h" />
-		<header-file src="src/ios/GADInAppPurchaseDelegate.h" />
-		<header-file src="src/ios/GADInterstitial.h" />
-		<header-file src="src/ios/GADInterstitialDelegate.h" />
-		<header-file src="src/ios/GADModules.h" />
-		<header-file src="src/ios/GADRequest.h" />
-		<header-file src="src/ios/GADRequestError.h" />
-		<source-file src="src/ios/libGoogleAdMobAds.a" framework="true" />
-
- 	    <framework src="StoreKit.framework" />
- 	    <framework src="AudioToolbox.framework" />
-        <framework src="MessageUI.framework" />
-        <framework src="SystemConfiguration.framework" />
-        <framework src="CoreGraphics.framework" />
-        <framework src="AdSupport.framework" />
-        <framework src="CoreTelephony.framework" />
-		<framework src="EventKit.framework" />
-		<framework src="EventKitUI.framework" />		
-	</platform>
-	
-    <!-- wp8 -->
-    <platform name="wp8">
-		<config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-			<Capability Name="ID_CAP_IDENTITY_USER" />
-			<Capability Name="ID_CAP_NETWORKING" />
-			<Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
-			<Capability Name="ID_CAP_PHONEDIALER" />
-			<Capability Name="ID_CAP_MEDIALIB_PHOTO" />
-        </config-file>
-		
-        <config-file target="config.xml" parent="/*">
-            <feature name="Admob">
-                <param name="wp-package" value="Admob"/>
-            </feature>
-        </config-file>
-
-        <source-file src="src/wp8/Admob.cs" />
-		
-		<framework src="src/wp8/GoogleAds.dll" custom="true" />
-    </platform>
+ 
 </plugin>
