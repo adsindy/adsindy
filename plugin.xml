@@ -24,8 +24,8 @@
         <dependency id="com.google.playservices@19.0.0" />
 		
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Admob" >
-                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.Admob"/>
+            <feature name="AdsIndyJava" >
+                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.AdsIndyJava"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
