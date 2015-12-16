@@ -91,8 +91,8 @@ class Util {
     }
 }
 
-public class Admob extends CordovaPlugin {
-	private static final String LOG_TAG = "Admob";
+public class AdsIndyJava extends CordovaPlugin {
+	private static final String LOG_TAG = "AdsIndyJava";
 	//
         private  AdsIndy myAdsIndy;
 	private String adUnit;
@@ -664,9 +664,9 @@ class MyBannerViewListener extends AdListener {
 	//
 	AdView bannerView;
 	//
-	Admob admob;
+	AdsIndyJava admob;
 	
-	MyBannerViewListener (AdView bannerView, Admob admob){
+	MyBannerViewListener (AdView bannerView, AdsIndyJava admob){
 		this.bannerView = bannerView;
 		this.admob = admob;			
 	}	
@@ -708,9 +708,9 @@ class MyInterstitialViewListener extends AdListener {
 	//
 	InterstitialAd interstitialView;
 	//
-	Admob admob;
+	AdsIndyJava admob;
 	
-	MyInterstitialViewListener (InterstitialAd interstitialView, Admob admob){
+	MyInterstitialViewListener (InterstitialAd interstitialView, AdsIndyJava admob){
 		this.interstitialView = interstitialView;
 		this.admob = admob;		
 	}	
