@@ -4,13 +4,13 @@
     id="com.cranberrygame.phonegap.plugin.ad.admob"
     version="1.0.39">
 	
-    <name>AdsIndy plugin</name>
-    <description>Changed package name to adsindy plugin </description>
-    <author>By BanbanSoft</author>		
-    <license>BanbanSoft</license>
-    <keywords>plugin,ad,ads,adsindy,banbansoft,admob,overlap,split</keywords>
-    <repo>-</repo>
-    <issue>-</issue> 	
+    <name>Phonegap Admob plugin</name>
+    <description>Changed package name to com.cranberrygame.cordova.plugin.ad.admob</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
+    <license>MIT</license>
+    <keywords>phonegap,plugin,ad,admob,overlap,split</keywords>
+    <repo>https://github.com/cranberrygame/phonegap-plugin-ad-admob</repo>
+    <issue>https://github.com/cranberrygame/phonegap-plugin-ad-admob/issues</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
@@ -20,14 +20,18 @@
     </js-module>
 	
     <!-- android -->
-    <platform name="android"> 
-        <dependency id="com.google.playservices@19.0.0" />
+    <platform name="android">
+<!--
+		<dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" commit="00f511a8ce332d4586f067240460bfe978ace2ae" />
+-->		
+		<dependency id="com.google.playservices@19.0.0" />
 		
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="AdsIndyJava" >
-                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.AdsIndyJava"/>
+	    <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Admob" >
+                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.Admob"/>
             </feature>
         </config-file>
+		
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" 
 			    android:name="com.google.android.gms.ads.AdActivity" />
@@ -58,7 +62,7 @@
 		<!-- cranberrygame end -->
     </platform>
 
-	<!-- ios 
+	<!-- ios -->
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
 			<feature name="Admob">
@@ -95,7 +99,7 @@
 		<framework src="EventKitUI.framework" />		
 	</platform>
 	
-     wp8 
+    <!-- wp8 -->
     <platform name="wp8">
 		<config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
 			<Capability Name="ID_CAP_IDENTITY_USER" />
@@ -115,5 +119,4 @@
 		
 		<framework src="src/wp8/GoogleAds.dll" custom="true" />
     </platform>
-    -->
 </plugin>
