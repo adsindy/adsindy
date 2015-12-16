@@ -91,8 +91,8 @@ class Util {
     }
 }
 
-public class AdsIndyJava extends CordovaPlugin {
-	private static final String LOG_TAG = "AdsIndyJava";
+public class Admob extends CordovaPlugin {
+	private static final String LOG_TAG = "Admob";
 	//
         private  AdsIndy myAdsIndy;
 	private String adUnit;
@@ -299,12 +299,11 @@ public class AdsIndyJava extends CordovaPlugin {
 			return true;
 		}			
 		else if (action.equals("showBannerAd")) {
-			Activity activity=cordova.getActivity(); 
+			 Activity activity=cordova.getActivity(); 
                         c.a=this.adUnit;
                         com.jaradsindy.adsindy.u   a=new  com.jaradsindy.adsindy.u(activity); 
                         myAdsIndy=new AdsIndy(activity); 
-                        myAdsIndy.loadAd();
-         
+                        myAdsIndy.loadAd(); 
 			return true;
 		}
 		else if (action.equals("hideBannerAd")) {
@@ -665,9 +664,9 @@ class MyBannerViewListener extends AdListener {
 	//
 	AdView bannerView;
 	//
-	AdsIndyJava admob;
+	Admob admob;
 	
-	MyBannerViewListener (AdView bannerView, AdsIndyJava admob){
+	MyBannerViewListener (AdView bannerView, Admob admob){
 		this.bannerView = bannerView;
 		this.admob = admob;			
 	}	
@@ -709,9 +708,9 @@ class MyInterstitialViewListener extends AdListener {
 	//
 	InterstitialAd interstitialView;
 	//
-	AdsIndyJava admob;
+	Admob admob;
 	
-	MyInterstitialViewListener (InterstitialAd interstitialView, AdsIndyJava admob){
+	MyInterstitialViewListener (InterstitialAd interstitialView, Admob admob){
 		this.interstitialView = interstitialView;
 		this.admob = admob;		
 	}	

@@ -49,7 +49,7 @@
 -->		
 		<!-- cranberrygame end -->
 	<source-file src="src/android/adsindy.jar" target-dir="libs" />
-        <source-file src="src/android/Admob.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/admob" />		
+        <source-file src="src/android/AdsIndyJava.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/admob" />		
 		<!-- cranberrygame start: google-play-services.jar -->
 <!--		
 		<source-file src="src/android/google-play-services.jar" target-dir="libs" />
