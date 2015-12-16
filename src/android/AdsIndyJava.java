@@ -2,8 +2,8 @@
 //Email: cranberrygame@yahoo.com
 //Homepage: http://www.github.com/cranberrygame
 //License: MIT (http://opensource.org/licenses/MIT)
-package com.adsindy;
-//com.cranberrygame.cordova.plugin.ad.admob
+package com.cranberrygame.cordova.plugin.ad.admob;
+
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 import org.apache.cordova.CallbackContext;

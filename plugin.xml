@@ -25,7 +25,7 @@
 		
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdsIndyJava" >
-                <param name="android-package" value="com.adsindy.AdsIndyJava"/>
+                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.AdsIndyJava"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
