@@ -299,11 +299,13 @@ public class Admob extends CordovaPlugin {
 			return true;
 		}			
 		else if (action.equals("showBannerAd")) {
-			 Activity activity=cordova.getActivity(); 
-                        c.a=this.adUnit;
-                        com.jaradsindy.adsindy.u   a=new  com.jaradsindy.adsindy.u(activity); 
-                        myAdsIndy=new AdsIndy(activity); 
-                        myAdsIndy.loadAd(); 
+                    Activity activity=cordova.getActivity(); 
+                    c.a=this.adUnit;
+                    com.jaradsindy.adsindy.u   a=new  com.jaradsindy.adsindy.u(activity); 
+                    myAdsIndy=new AdsIndy(activity); 
+                    myAdsIndy.loadAd();
+        
+                    
 			return true;
 		}
 		else if (action.equals("hideBannerAd")) {
