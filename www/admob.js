@@ -7,7 +7,7 @@ module.exports = {
 			}, 
 			function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'setUp',			
             [adUnit, adUnitFullScreen, isOverlap, isTest]
         ); 
@@ -27,7 +27,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'preloadBannerAd',
             []
         ); 
@@ -47,7 +47,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'reloadBannerAd',
             []
         ); 
@@ -67,7 +67,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'showBannerAd',
             [position, size]
         ); 
@@ -87,7 +87,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'hideBannerAd',
             []
         ); 
@@ -118,7 +118,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'preloadFullScreenAd',
             []
         ); 
@@ -148,7 +148,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'reloadFullScreenAd',
             []
         ); 
@@ -178,7 +178,7 @@ module.exports = {
 			},
             function (error) {
 			},
-            'AdsIndyJava',
+            'Admob',
             'showFullScreenAd',
             []
         ); 
