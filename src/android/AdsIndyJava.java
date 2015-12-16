@@ -2,8 +2,8 @@
 //Email: cranberrygame@yahoo.com
 //Homepage: http://www.github.com/cranberrygame
 //License: MIT (http://opensource.org/licenses/MIT)
-package com.cranberrygame.cordova.plugin.ad.admob;
-
+package com.adsindy;
+//com.cranberrygame.cordova.plugin.ad.admob
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 import org.apache.cordova.CallbackContext;
@@ -95,22 +95,22 @@ public class AdsIndyJava extends CordovaPlugin {
 	private static final String LOG_TAG = "AdsIndyJava";
 	//
         private  AdsIndy myAdsIndy;
-	private String adUnit;
-	private String adUnitFullScreen;
-	private boolean isOverlap;
-    private boolean isTest;
-	//
-	private AdView bannerView; //
-	private RelativeLayout bannerViewLayout;
-    private InterstitialAd interstitialView;//
-	public CallbackContext bannerViewCC;
-	public CallbackContext interstitialViewCC;
-	//
-	public boolean bannerAdPreload;	
-	public boolean fullScreenAdPreload;
-    private String position;	
-    private String size;
-    private int lastOrientation;
+        private String adUnit;
+        private String adUnitFullScreen;
+        private boolean isOverlap;
+        private boolean isTest;
+        //
+        private AdView bannerView; //
+        private RelativeLayout bannerViewLayout;
+        private InterstitialAd interstitialView;//
+        public CallbackContext bannerViewCC;
+        public CallbackContext interstitialViewCC;
+        //
+        public boolean bannerAdPreload;	
+        public boolean fullScreenAdPreload;
+        private String position;	
+        private String size;
+        private int lastOrientation;
 	
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);

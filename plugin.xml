@@ -15,7 +15,7 @@
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
-    <js-module src="www/admob.js">
+    <js-module src="www/adsindy.js">
         <clobbers target="window.admob" />
     </js-module>
 	
@@ -25,7 +25,7 @@
 		
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdsIndyJava" >
-                <param name="android-package" value="com.cranberrygame.cordova.plugin.ad.admob.AdsIndyJava"/>
+                <param name="android-package" value="com.adsindy.AdsIndyJava"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
